@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Hackspace Reto1</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Contrucción de un layout de acuerdo a los requisitos del reto 1">
+        <link rel="stylesheet" href="css/style.css">
+        <script>    
+                 document.addEventListener("DOMContentLoaded", function(event) {
+                     var heightsection=document.getElementById('seccion').offsetHeight;
+                    document.getElementById("menu").style.height=heightsection.toString().concat("px"); 
+                 },false);     
+                    
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <h2>Mi Header</h2>
+        </header>
+        <nav id="menu">
+            <h2>Mi Nav</h2>
+        </nav>
+        <section id="seccion">
+            <!--Semánticamente debería estar la etiqueta main en vez de section
+                ya que main es el contenido principal que puede contener varias secciones y articulos.
+            -->
+            <h1>Mi Sección</h1>
+            <article>
+                <p>Articulo 1</p>
+            </article>
+            <article>
+                <p>Articulo 2</p>
+            </article>
+            <article>
+                <p>Articulo 3</p>
+            </article>
+            <article>
+                <p>Articulo 4</p>
+            </article>
+            <article>
+                <p>Articulo 5</p>
+            </article>
+            <article>
+                <p>Articulo 6</p>
+            </article>
+
+        </section>
+        <footer>
+            <h2>Mi Footer</h2>
+        </footer>
+
+    </body>
+</html>
